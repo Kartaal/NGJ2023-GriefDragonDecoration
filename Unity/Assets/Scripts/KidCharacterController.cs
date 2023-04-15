@@ -7,11 +7,13 @@ using UnityEditor.Build.Content;
 
 public class KidCharacterController : BaseCharacterController
 {
+    [Header("KidCharacterController fields")]
+    
     public int playerId = 0;
 
     private Player _player;
 
-    public GameObject fov;
+    public CapsuleCollider visionCollider;
     
     public override void Awake()
     {
