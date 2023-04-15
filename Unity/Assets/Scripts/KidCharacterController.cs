@@ -10,6 +10,8 @@ public class KidCharacterController : BaseCharacterController
     public int playerId = 0;
 
     private Player _player;
+
+    public GameObject fov;
     
     public override void Awake()
     {
