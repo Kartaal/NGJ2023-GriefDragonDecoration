@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b77b7f0-b353-4422-bc5a-21c7e4fd501b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Kid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Kid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KidCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KidCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GarageScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GarageScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681567036749</updated>
-      <workItem from="1681567038884" duration="2268000" />
+      <workItem from="1681567038884" duration="2870000" />
     </task>
     <servers />
   </component>
