@@ -66,17 +66,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HERE IS TEXT
+  m_text: "Our story begins w\xEDth a child, a child beset by tragedy. This child,
+    Lex, has lost their parents. One might think it is fortunate that Lex has a kindly
+    uncle, unaware of children, but a decent sort, willing to take Lex in. One might.
+    Lex can not help but feel responsible for their parents' death, and is plagued
+    with guilt. What could Lex have done differently? But their parents are gone,
+    and in their uncles' benevolent neglect, Lex is often alone to sort things out.
+    One night, Lex crept out to the dark garage where their uncle kept the remains
+    of their parents' past lives, as well as his own forgotten past. Lex crept into
+    the dark, desperate to find some meaning in the objects. But Lex doesn't know
+    that they are pursued, that there is a darkness in the garage, a dragon. "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255379
-  m_fontColor: {r: 0.07544446, g: 1, b: 0, a: 1}
+    rgba: 4293485222
+  m_fontColor: {r: 0.65234005, g: 0.3833036, b: 0.9150943, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -93,15 +102,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -129,7 +138,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -187.49329, y: -145.21701, z: -178.66681, w: -112.382774}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -182,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1193743447344876632}
   textArea: {fileID: 1193743447156869411}
+  dragonConfrontationText: 
 --- !u!1 &1193743447344876632
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1193743447344876635
 RectTransform:
   m_ObjectHideFlags: 0
@@ -231,7 +241,7 @@ Canvas:
   m_GameObject: {fileID: 1193743447344876632}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 1
   m_PixelPerfect: 0
@@ -478,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.6509434, g: 0.63497686, b: 0.63497686, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
