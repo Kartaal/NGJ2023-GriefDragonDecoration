@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 685279459295884808}
   - component: {fileID: 1429546602}
   - component: {fileID: 8908379497120369422}
+  - component: {fileID: 3322526805488670802}
   m_Layer: 0
   m_Name: Kid
   m_TagString: Player
@@ -478,7 +479,7 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 176724f165ed631408775764c436d474, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 1
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -557,7 +558,6 @@ MonoBehaviour:
   _useRootMotion: 0
   _rootMotionRotation: 0
   playerId: 0
-  visionCollider: {fileID: 0}
 --- !u!95 &8908379497120369422
 Animator:
   serializedVersion: 5
@@ -579,6 +579,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3322526805488670802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685279459295884814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d4703852a467e4faff3de514ff9eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &761274848048165756
 GameObject:
   m_ObjectHideFlags: 0
