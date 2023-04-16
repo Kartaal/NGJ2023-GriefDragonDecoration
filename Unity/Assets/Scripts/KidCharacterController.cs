@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using ECM.Controllers;
 using Rewired;
-using Unity.VisualScripting;
-using UnityEditor.Build.Content;
 
 public class KidCharacterController : BaseCharacterController
 {

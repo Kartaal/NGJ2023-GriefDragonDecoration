@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     public GameObject canvas;
     public TextMeshProUGUI textArea;
 
+    [Multiline] public string dragonConfrontationText;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -38,5 +40,10 @@ public class UIManager : MonoBehaviour
     public void HideCanvas()
     {
         canvas.SetActive(false);
+    }
+
+    public void DisplayConfrontingDragon()
+    {
+        DisplayText(dragonConfrontationText);
     }
 }
