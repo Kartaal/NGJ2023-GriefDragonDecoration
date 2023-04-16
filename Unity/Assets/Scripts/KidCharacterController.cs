@@ -3,22 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using ECM.Controllers;
 using Rewired;
+using Unity.VisualScripting;
 using UnityEditor.Build.Content;
 
 public class KidCharacterController : BaseCharacterController
 {
-    [Header("KidCharacterController fields")]
-    
     public int playerId = 0;
 
     private Player _player;
+    private Animator _animator;
 
-    public CapsuleCollider visionCollider;
-    
+    private Vector3 lastPosition;
+
     public override void Awake()
     {
         base.Awake();
         _player = ReInput.players.GetPlayer(playerId);
+    }
+
+    void Start()
+    {
+        _animator = GetComponent<Animator>();
+        lastPosition  = transform.position;
     }
     
     protected override void HandleInput()
@@ -30,8 +36,24 @@ public class KidCharacterController : BaseCharacterController
             z = _player.GetAxisRaw("Vertical")
         };
 
-        jump = _player.GetButton("Jump");
+        //jump = _player.GetButton("Jump");
 
         crouch = _player.GetButton("Crouch");
+    }
+    
+    private float isMoving;
+
+    public override void Update()
+    {
+        base.Update();
+        isMoving = (lastPosition - transform.position).normalized.sqrMagnitude;
+        
+        lastPosition = transform.position;
+    }
+
+    protected override void Animate()
+    {
+        animator.SetBool("Crouch", crouch);
+        animator.SetFloat("Walk", isMoving);
     }
 }
