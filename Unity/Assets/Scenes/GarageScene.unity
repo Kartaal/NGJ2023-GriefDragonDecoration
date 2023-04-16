@@ -1316,8 +1316,8 @@ GameObject:
   - component: {fileID: 497302231}
   - component: {fileID: 497302230}
   - component: {fileID: 497302234}
-  - component: {fileID: 497302233}
   - component: {fileID: 497302235}
+  - component: {fileID: 497302233}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1515,7 +1515,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
