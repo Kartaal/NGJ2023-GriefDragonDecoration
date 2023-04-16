@@ -21,5 +21,7 @@ public class PickupSound : MonoBehaviour
         s.Play();
         rend.enabled = false;
         Destroy(gameObject, s.clip.length);
+
+        DialogueManager.instance.PickedUpMcGuffin();
     }
 }

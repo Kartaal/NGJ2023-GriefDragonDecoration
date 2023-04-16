@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     public List<DialogueChoice> editorChoices;
     private List<DialogueChoice> choices;
 
+    public int mcguffinCount { get; set; } = 5;
+
     
     private void Awake()
     {
@@ -34,7 +36,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        choices[0].DisplayUIElements();
+        UIManager.instance.DisplayCanvas();
+        NextDialogue();
     }
 
     public void NextDialogue()
@@ -45,6 +48,19 @@ public class DialogueManager : MonoBehaviour
             choice.gameObject.SetActive(false);
         }
         
-        choices[++choiceIndex].gameObject.SetActive(true);
+        choices[choiceIndex++].gameObject.SetActive(true);
+    }
+
+
+    public void PickedUpMcGuffin()
+    {
+        mcguffinCount--;
+
+        Debug.Log($"McGuffins left: {mcguffinCount}");
+
+        if (mcguffinCount == 0)
+        {
+            StartDialogue();
+        }
     }
 }
