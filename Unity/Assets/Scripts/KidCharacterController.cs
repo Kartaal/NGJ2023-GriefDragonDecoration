@@ -10,7 +10,7 @@ public class KidCharacterController : BaseCharacterController
 {
     public int playerId = 0;
 
-    private Player _player;
+    private Rewired.Player _player;
     private Animator _animator;
 
     private Vector3 lastPosition;
