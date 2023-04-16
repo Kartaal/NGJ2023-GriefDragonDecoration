@@ -9,8 +9,11 @@ public class UIManager : MonoBehaviour
 
     public GameObject canvas;
     public TextMeshProUGUI textArea;
+    public TextMeshProUGUI lastDragonTextArea;
 
     [Multiline] public string dragonConfrontationText;
+    [Multiline] public string winText;
+    [Multiline] public string loseText;
 
     private void Awake()
     {
@@ -30,6 +33,15 @@ public class UIManager : MonoBehaviour
         DisplayCanvas();
 
         textArea.text = text;
+        textArea.gameObject.SetActive(true);
+    }
+
+    public void DisplayLastDragonText(string text)
+    {
+        DisplayCanvas();
+
+        lastDragonTextArea.text = text;
+        lastDragonTextArea.gameObject.SetActive(true);
     }
 
     public void DisplayCanvas()
@@ -45,5 +57,29 @@ public class UIManager : MonoBehaviour
     public void DisplayConfrontingDragon()
     {
         DisplayText(dragonConfrontationText);
+    }
+
+    public void DisplayEndText()
+    {
+        if (DialogueManager.instance._score > 0)
+        {
+            DisplayWinText();
+        }
+        else
+        {
+            DisplayLoseText();
+        }
+        
+        lastDragonTextArea.gameObject.SetActive(false);
+    }
+
+    public void DisplayWinText()
+    {
+        DisplayText(winText);
+    }
+
+    public void DisplayLoseText()
+    {
+        DisplayText(loseText);
     }
 }
